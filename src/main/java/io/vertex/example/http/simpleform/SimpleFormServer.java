@@ -11,7 +11,7 @@ public class SimpleFormServer extends AbstractVerticle{
 	
 	@Override
 	public void start(){
-		final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/simpleform/";
+		final String FILE_LOCATIONS = System.getProperty("user.dir") + "/src/main/java/io/vertex/example/http/simpleform/";
 		vertx.createHttpServer().requestHandler(request -> {
 			if(request.path().equals("/")){
 				request.response().sendFile(FILE_LOCATIONS + "index.html", 

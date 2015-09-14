@@ -25,7 +25,7 @@ public class Client extends AbstractVerticle {
     HttpClientRequest req = vertx.createHttpClient(new HttpClientOptions()).put(8080, "localhost", "/someurl", resp -> {
       System.out.println("Response " + resp.statusCode());
     });
-    String filename = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/upload.txt";
+    String filename = System.getProperty("user.dir") + "/src/main/java/io/vertex/example/http/upload/upload.txt";
     FileSystem fs = vertx.fileSystem();
 
     fs.props(filename, ares -> {

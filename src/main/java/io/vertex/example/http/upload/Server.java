@@ -15,7 +15,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata/";
+	final String FILE_LOCATIONS = System.getProperty("user.dir") + "/src/main/java/io/vertex/example/http/upload/uploadeddata/";
 
 	@Override
 	public void start() {

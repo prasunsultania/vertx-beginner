@@ -50,6 +50,11 @@ public class Server extends AbstractVerticle{
 		        request.response().end();
 			});
 			
-		}).listen(8282);
+		}).listen(8282,res -> {
+			//Callback handler for listen method
+			System.out.println("Server is now listening on port 8080: " + res.succeeded());
+			if(res.failed())
+			 System.out.println(res.cause().getMessage());
+		});
 	}
 }

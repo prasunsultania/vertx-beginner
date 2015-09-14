@@ -11,7 +11,7 @@ public class SendFile extends AbstractVerticle{
 	
 	@Override
 	public void start(){
-		final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/sendfile/";
+		final String FILE_LOCATIONS = System.getProperty("user.dir") + "/src/main/java/io/vertex/example/http/sendfile/";
 		vertx.createHttpServer().requestHandler(request -> {
 			String fileName = null;
 			if(request.path().equals("/")){

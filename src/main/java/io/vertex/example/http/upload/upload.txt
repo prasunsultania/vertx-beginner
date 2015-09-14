@@ -25,7 +25,7 @@ public class Client extends AbstractVerticle {
     HttpClientRequest req = vertx.createHttpClient(new HttpClientOptions()).put(8080, "localhost", "/someurl", resp -> {
       System.out.println("Response " + resp.statusCode());
     });
-    String filename = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/upload.txt";
+    String filename = "";
     FileSystem fs = vertx.fileSystem();
 
     fs.props(filename, ares -> {
@@ -62,7 +62,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {
@@ -123,7 +123,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {
@@ -184,7 +184,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {
@@ -245,7 +245,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {
@@ -306,7 +306,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {
@@ -367,7 +367,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {
@@ -428,7 +428,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {
@@ -489,7 +489,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {
@@ -550,7 +550,7 @@ public class Server extends AbstractVerticle {
 		Runner.runExample(Server.class);
 	}
 
-	final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/upload/uploadeddata";
+	final String FILE_LOCATIONS = ";
 
 	@Override
 	public void start() {

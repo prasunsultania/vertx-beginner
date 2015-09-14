@@ -11,7 +11,7 @@ public class Server extends AbstractVerticle{
 	
 	@Override
 	public void start(){
-		final String FILE_LOCATIONS = "/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/io/vertex/example/http/websockets/";
+		final String FILE_LOCATIONS = System.getProperty("user.dir") + "/src/main/java/io/vertex/example/http/websockets/";
 		vertx.createHttpServer().websocketHandler(
 				ws -> ws.handler(data -> {
 					System.out.println(data.toString("ISO-8859-1"));

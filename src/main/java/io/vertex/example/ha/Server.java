@@ -9,7 +9,7 @@ import io.vertx.core.VertxOptions;
 public class Server extends AbstractVerticle{
 	
 	public static void main(String[] args) {
-		ExampleRunner.runJavaExample("/Users/prasunsultania/Documents/workspace/vertex/experimental/maven-core/src/main/java/", 
+		ExampleRunner.runJavaExample( System.getProperty("user.dir") + "/src/main/java/", 
 				Server.class, 
 				new VertxOptions().setHAEnabled(true));
 	}
